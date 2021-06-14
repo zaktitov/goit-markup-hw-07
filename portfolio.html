@@ -12,7 +12,7 @@
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="./css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -220,65 +220,68 @@
 
   <!--!BASELINE-->
   <footer class="footer">
-    <div class="footer-container">
+    <div class="footer__container">
       <div class="">
 
         <address>
-          <a href="./index.html" class="logo-bottom animate__flipInX">Web<span class=" accent-white">Studio</span></a>
-          <p class="footer-adress"><a class="footer-adress" href="https://goo.gl/maps/gyJEV5aS9oNLiFQU9">г. Киев, пр-т
+          <a href="./index.html" class="logo__bottom animate__flipInX">Web<span
+              class="logo__bottom--accent">Studio</span></a>
+          <p class="location__adress"><a class="location link" href="https://goo.gl/maps/gyJEV5aS9oNLiFQU9">г. Киев,
+              пр-т
               Леси Украинки, 26</a></p>
 
-          <ul class="foot list">
-            <li class="foot item">
-              <a class="footer-contact link" href="mailto:infoexample.com">info@example.com
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" href="mailto:infoexample.com">info@example.com
               </a>
-
             </li>
-            <li class="foot item">
-              <a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11
+
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11
               </a>
             </li>
           </ul>
         </address>
       </div>
 
-      <div class="footer-social-links-container">
-        <b class="footer-social-links-text">ПРИСОЕДИНЯЙТЕСЬ</b>
-        <ul class="footer-social-links-list">
-          <li><a href="" class="footer-social-links">
-              <svg class="footer-icons">
+      <div class="footer-social-network__container">
+        <b class="footer-social-network__slogan">ПРИСОЕДИНЯЙТЕСЬ</b>
+        <ul class="footer-social-network__list">
+          <li><a href="" class="footer-social-network__links">
+              <svg class="footer-social-network__icons">
                 <use href="./image/symbol-omg.svg#icon-instagram"></use>
               </svg></a>
           </li>
-          <li><a href="" class="footer-social-links">
-              <svg class="footer-icons">
+          <li><a href="" class="footer-social-network__links">
+              <svg class="footer-social-network__icons">
                 <use href="./image/symbol-omg.svg#icon-twitter"></use>
               </svg></a>
           </li>
-          <li><a href="" class="footer-social-links">
-              <svg class="footer-icons">
+          <li><a href="" class="footer-social-network__links">
+              <svg class="footer-social-network__icons">
                 <use href="./image/symbol-omg.svg#icon-facebook"></use>
               </svg></a>
           </li>
-          <li><a href="" class="footer-social-links">
-              <svg class="footer-icons">
+          <li><a href="" class="footer-social-network__links">
+              <svg class="footer-social-network__icons">
                 <use href="./image/symbol-omg.svg#icon-linkedin"></use>
               </svg></a>
           </li>
         </ul>
       </div>
 
+      <!-- !FORM FOOTER -->
+
       <form class="form-footer" method="GET" autocomplete="on">
-        <b class="footer-social-links-text">Подпишитесь на рассылку</b>
-        <input type="email" class="footer-input-email" name="email" id="email-footer" placeholder="E-mail" required>
-        <button type="submit" class="btn-input-footer">Подписаться
-          <svg class="input-footer-icon">
+        <b class="form-footer__slogan">Подпишитесь на рассылку</b>
+        <input type="email" class="form-footer__input--email" name="email" id="email-footer" placeholder="E-mail"
+          required>
+        <button type="submit" class="form-footer__btn--subscribe">Подписаться
+          <svg class="form-footer__icon">
             <use href="./image/symbol-omg2.svg#icon-send-footersend"></use>
           </svg>
         </button>
       </form>
-
-
     </div>
 
   </footer>
