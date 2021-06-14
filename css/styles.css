@@ -980,7 +980,7 @@ p {
 
 /*===============Forma========*/
 
-.form {
+.form-hero {
   width: 100%;
   height: 501px;
   margin: 0 auto;
@@ -991,11 +991,11 @@ p {
   justify-content: space-between;
 }
 
-.form:focus-within {
+.form-hero:focus-within {
   border-color: var(--form-hover);
 }
 
-.slogan {
+.form-hero__slogan {
   font-family: Roboto;
   font-weight: bold;
   font-size: 20px;
@@ -1006,21 +1006,34 @@ p {
   color: #212121;
 }
 
-.div-input-icons {
+.form-hero__label {
+  width: 448px;
+  margin-top: 10px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text);
+}
+
+.form-hero__container {
   position: relative;
   margin-top: 4px;
 }
 
-.div-input-icons:hover,
-.div-input-icons:focus {
+.form-hero__container:hover,
+.form-hero__container:focus {
   color: var(--form-hover);
 }
 
-.div-input-icons:focus-within {
+.form-hero__container:focus-within {
   color: var(--form-hover);
 }
 
-.input-contact {
+.form-hero__input {
   width: 448px;
   height: 40px;
   padding: 11px 42px;
@@ -1032,13 +1045,13 @@ p {
     var(--transition-timing-function);
 }
 
-.input-contact:hover,
-.input-contact:focus,
-.input-contact:focus-within {
+.form-hero__input:hover,
+.form-hero__input:focus,
+.form-hero__input:focus-within {
   border-color: var(--form-hover);
 }
 
-.icons-form {
+.form-hero__icons {
   position: absolute;
   top: 0;
   left: 15px;
@@ -1050,8 +1063,8 @@ p {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.icons-form:hover,
-.icons-form:focus {
+.form-hero__icons:hover,
+.form-hero__icons:focus {
   color: var(--form-hover);
 }
 
@@ -1061,6 +1074,7 @@ p {
   margin-top: 4px;
   resize: none;
   padding: 12px 16px;
+  outline-color: var(--form-hover);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1076,24 +1090,9 @@ p {
 
   color: rgba(117, 117, 117, 0.5);
 }
+/* ======CHECKBOX====== */
 
-.checkbox:checked + .checkbox-text::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border-color: #188ce8;
-  background-color: #188ce8;
-  background-image: url(../css/images/check1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.checkbox:checked:focus + .checkbox-text::before {
-  border-color: #212121;
-}
-
-.checkbox-text {
+.checkbox__text {
   margin-top: 20px;
   width: 430px;
   height: 24px;
@@ -1106,20 +1105,7 @@ p {
   color: #757575;
 }
 
-.checkbox-text::before {
-  display: inline-block;
-  content: "";
-  vertical-align: middle;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  background-color: #ffffff;
-  border: solid 2px;
-  border-radius: 3px;
-  border-color: #212121;
-}
-
-.checkbox-link {
+.checkbox__link {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
@@ -1131,20 +1117,42 @@ p {
   color: var(--form-hover);
 }
 
-.label-text {
-  width: 448px;
-  margin-top: 10px;
-
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: var(--secondary-text);
+.checkbox__text::before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-color: #ffffff;
+  border: solid 2px;
+  border-radius: 3px;
+  border-color: #212121;
+  cursor: pointer;
 }
 
-.form-button {
+.checkbox:checked + .checkbox__text::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border-color: #188ce8;
+  background-color: #188ce8;
+  background-image: url(../css/images/check1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox:checked:focus + .checkbox__text::before {
+  border-color: #212121;
+}
+
+.checkbox:focus + .checkbox__text::before,
+.checkbox:hover + .checkbox__text::before {
+  border-color: var(--form-hover);
+}
+
+.form-hero__btn-submit {
   display: block;
   padding: 10px 55px;
   width: 200px;
@@ -1168,8 +1176,8 @@ p {
   color: var(--bg-color);
 }
 
-.form-button:hover,
-.form-button:focus {
+.form-hero__btn-submit:hover,
+.form-hero__btn-submit:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
