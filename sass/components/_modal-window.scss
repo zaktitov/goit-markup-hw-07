@@ -26,12 +26,14 @@
   padding: 0;
   color: black;
   transition: color var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal__btn:hover,
-.modal__btn:focus {
+  &:hover,
+&:focus {
   color: #188ce8;
 }
+}
+
+
 
 .icon__close {
   fill: currentColor;
