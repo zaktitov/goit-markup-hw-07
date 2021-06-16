@@ -5,6 +5,8 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   &__heading {
@@ -21,9 +23,6 @@
 
   &__list {
     display: flex;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   &__item {
@@ -43,7 +42,7 @@
   &__text {
     position: absolute;
     z-index: 1;
-    width: 360px;
+    width: 370px;
     height: 70px;
     display: flex;
     justify-content: center;
